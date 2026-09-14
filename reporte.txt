@@ -1,0 +1,21 @@
+> LLAMADA ASC-118 EMERGENCIA 490
+RECHAZADA (R2): el ascensor ya tiene una llamada activa
+
+> ATENDER
+ASC-118 | EMERGENCIA | espera 4 min -> CUMPLE (objetivo 30)
+
+> PASO 3
+RECHAZADO (R3): el tope de la pila es el paso 1, se esperaba ejecutar el paso 2
+
+> ABORTAR llegaron_bomberos
+deshacer paso 3 -> soltar freno manual
+deshacer paso 2 -> desbloquear puertas de piso
+deshacer paso 1 -> restablecer energia
+pila vacia -> llamada cerrada como ABORTADA, ascensor OPERATIVO
+
+=== REPORTE DE LA JORNADA ===
+
+Emergencias atendidas: 2 Mantenimientos atendidos: 0 En cola al cierre: 1
+Tiempo de respuesta emergencias: promedio 5 min / maximo 6 min | cumplimiento 100%
+Rescates completados: 1 Abortados: 1 (llegaron_bomberos)
+Llamadas rechazadas: 1 duplicada, 0 fuera de servicio
