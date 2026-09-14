@@ -1,0 +1,25 @@
+PARQUE
+ASC-101, Torre Bolivar, OPERATIVO, 0
+ASC-118, Edificio Aurora, OPERATIVO, 2
+ASC-145, Clinica Sur, OPERATIVO, 0
+ASC-160, Centro Andino, OPERATIVO, 1
+---
+LLAMADA ASC-118 EMERGENCIA 480 # 08:00
+LLAMADA ASC-101 MANTENIMIENTO 485
+LLAMADA ASC-118 EMERGENCIA 490 # duplicada -> debe rechazarse
+LLAMADA ASC-145 EMERGENCIA 495
+ATENDER # toma ASC-118 (emergencia 1 de 4)
+PASO 1
+PASO 3 # invalido: falta el paso 2
+PASO 2
+PASO 3
+ABORTAR llegaron_bomberos
+ATENDER # toma ASC-145 (emergencia 2 de 4)
+PASO 1
+PASO 2
+Página 4
+PASO 3
+PASO 4
+PASO 5
+CERRAR
+REPORTE
